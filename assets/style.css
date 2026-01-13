@@ -604,6 +604,7 @@ p {
   }
 
   /* Banner */
+  @media (max-width: 768px) {
   .project-banner {
     height: 240px;
   }
@@ -626,4 +627,5 @@ p {
   .site-footer p {
     text-align: center;
   }
+}
 }
