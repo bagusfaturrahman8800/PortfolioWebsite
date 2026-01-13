@@ -1,0 +1,84 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bagus Fatur Rahman | Portfolio</title>
+        <link rel="stylesheet" href="/assets/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Project Banner -->
+        <section class="project-banner">
+
+            <a href="index.html" class="btn-back">← Home</a>
+
+            <!-- Social Icons -->
+            <div class="banner-social">
+                <a href="https://www.linkedin.com/in/bagus-fatur-rahman/" target="_blank">
+                    <img src="/assets/icon/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/bagusfaturrhmn" target="_blank">
+                    <img src="/assets/icon/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/6283182004753" target="_blank">
+                    <img src="/assets/icon/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Section Project -->
+        <section class="section">
+            <h3>All Projects</h3>
+
+            <div class="project-cards">
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/assets/vegakonstruksi.png" alt="Project 1">
+                    </div>
+
+                    <div class="project-body">
+                        <h4>On Porgress</h4>
+                        <p>CV Vega Konstruksi</p>
+                        <a href="#">Priview</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/assets/iftar.png" alt="Project 2">
+                    </div>
+
+                    <div class="project-body">
+                        <h4>On Progress</h4>
+                        <p>Reservasi Iftar IBIS Hotel Padang</p>
+                        <a href="https://iftaribispadang.wuaze.com/auth/login.php">Priview</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                <div class="project-img">
+                    <img src="/assets/comingsoon/comingsoon.jpg" alt="Project 3">
+                </div>
+
+                <div class="project-body">
+                    <h4>Coming Soon!</h4>
+                    <p>Open for new projects and collaborations</p>
+                    <a href="#">Priview</a>
+                </div>
+                </div>
+            </div>
+        </section>
+        <div id="footer"></div>
+        <script>
+            fetch('footer.html')
+                .then(res => res.text())
+                .then(html => {
+                document.getElementById('footer').innerHTML = html;
+                });
+        </script>
+    </body>
+</html>
